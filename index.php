@@ -42,6 +42,13 @@ function updateglobal()
 $counter=10;
 updateglobal();
 echo 'counter value '. $counter. '</br>';
-
+checkstatic();
+checkstatic();
+function checkstatic()
+{
+    static $var = 0;
+    $var++;
+    echo $var . '</br>';
+}
 ?>
 

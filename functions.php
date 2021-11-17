@@ -41,4 +41,41 @@ function outer ($a)
 outer("well");
 inner("reader");
 
+$a = 3;
+function foo()
+{
+   global $a;  // without the global , variables are functions scope limited
+   $a= 2;
+}
+foo();
+$var = & $GLOBALS['a'];
+echo $a;
+
+
+function counter()
+{
+    static $count = 0;
+    return $count++;
+}
+for ($i = 1; $i <= 5; $i++) {
+    print counter();
+}
+
+
+function doublerref(&$value)
+{
+    $value = $value << 1;
+}
+$a = 3;
+doublerref($a);
+echo $a;
+
+
+function getPreferences($whichPreference = 'all')
+{
+// if $whichPreference is "all", return all prefs;
+// otherwise, get the specific preference requested...
+}
+
+
 $last=1;

@@ -26,6 +26,8 @@ printf("\r\n");
 
 printf(decbin(1028866). "\r\n");
 
-
+//$result = fopen($filename) or exit();
+$a = "5.8";
+$b = (int) $a;
 
 $x=1;

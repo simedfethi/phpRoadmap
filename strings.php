@@ -105,7 +105,56 @@ $output = strip_tags($input);
 
 $input = 'The <b>bold</b> tags will <i>stay</i><p>';
 $output = strip_tags($input, '<b>');
-$metaTags = get_meta_tags('https://www.youtube.com/');
-echo "Web page made by {$metaTags['author']}";
+//$metaTags = get_meta_tags('https://www.youtube.com/');
+//echo "Web page made by {$metaTags['author']}";
 
+$name = "Programming PHP";
+$output = rawurlencode($name);
+echo "http://localhost/{$output}";
+
+$baseUrl = 'http://www.google.com/q=';
+$query = 'PHP sessions -cookies';
+$url = $baseUrl . urlencode($query);
+echo $url;
+
+$string = <<< EOF
+"It's never going to work," she cried,
+as she hit the backslash (\) key.
+EOF;
+$string = addslashes($string);
+echo $string;
+echo stripslashes($string);
+
+echo addcslashes("hello\tworld\n", "\x00..\x1fz..\xff");
+
+
+$o1 = 3;
+$o2 = "3";
+if ($o1 == $o2) {
+    echo("== returns true<br>");
+} if ($o1 === $o2) {
+    echo("=== returns true<br>");
+}
+
+$n = strcmp("PHP Rocks", 5);
+echo($n);
+$n = strcasecmp("Fred", "frED"); // $n is 0
+
+$known = "Fred";
+$query = "Phred";
+if (soundex($known) == soundex($query)) {
+    print "soundex: {$known} sounds like {$query}<br>";
+} else {
+    print "soundex: {$known} doesn't sound like {$query}<br>";
+}
+if (metaphone($known) == metaphone($query)) {
+    print "metaphone: {$known} sounds like {$query}<br> \r\n";
+} else {
+    print "metaphone: {$known} doesn't sound like {$query}<br> \r\n";
+}
+$string1 = "Rasmus Lerdorf";
+$string2 = "Razmus Lehrdorf";
+$common = similar_text($string1, $string2, $percent);
+printf("They have %d chars in common (%.2f%%).", $common, $percent);
+$similarity = levenshtein("cat", "cot"); // $similarity is 1
 $v=1;

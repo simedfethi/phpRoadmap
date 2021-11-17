@@ -157,4 +157,93 @@ $string2 = "Razmus Lehrdorf";
 $common = similar_text($string1, $string2, $percent);
 printf("They have %d chars in common (%.2f%%).", $common, $percent);
 $similarity = levenshtein("cat", "cot"); // $similarity is 1
+
+$name = "Fred Flintstone";
+$fluff = substr($name, 6, 4); // $fluff is "lint"
+$sound = substr($name, 11); // $sound is "tone"
+
+
+$sketch = <<< EndOfSketch
+Well, there's egg and bacon; egg sausage and bacon; egg and spam;
+egg bacon and spam; egg bacon sausage and spam; spam bacon sausage
+and spam; spam egg spam spam bacon and spam; spam sausage spam spam
+bacon spam tomato and spam;
+EndOfSketch;
+$count = substr_count($sketch, "spam");
+print("The word spam occurs {$count} times.");
+
+$greeting = "good morning citizen";
+$farewell = substr_replace($greeting, "bye", 5, 7);
+// $farewell is "good bye citizen"
+$farewell = substr_replace($farewell, "kind ", 9, 0);
+// $farewell is "good bye kind citizen"
+
+echo strrev("There is no cabal");
+
+echo str_repeat('_.-.', 40);
+
+echo '[' . str_pad('Fred Flintstone', 30, ' ', STR_PAD_LEFT) . "]\n";
+echo '[' . str_pad('Fred Flintstone', 30, ' ', STR_PAD_BOTH) . "]\n";
+
+
+
+$input = 'Fred,25,Wilma';
+$fields = explode(',', $input);
+// $fields is array('Fred', '25', 'Wilma')
+$fields = explode(',', $input, 2);
+// $fields is array('Fred', '25,Wilma')
+
+$fields = array('Fred', '25', 'Wilma');
+$string = implode(',', $fields); // $string is 'Fred,25,Wilma'
+
+
+$string = "Fred,Flintstone,35,Wilma";
+$token = strtok($string, ",");
+while ($token !== false) {
+    echo("{$token}<br />");
+    $token = strtok(",");
+}
+
+$string = "Fred\tFlintstone (35)";
+$a = sscanf($string, "%s\t%s (%d)");
+print_r($a);
+
+$record = "Fred,Flintstone,35,Wilma";
+$pos = strrpos($record, ","); // find last comma
+echo("The last comma in the record is at position {$pos}");
+
+$record = "Fred,Flintstone,35,Wilma";
+$rest = strstr($record, ","); // $rest is ",Flintstone,35,Wilma"
+
+$bits = parse_url("http://me:secret@example.com/cgi-bin/board?user=fred");
+print_r($bits);
+
+preg_match("/^cow/", "Dave was a cowhand"); // returns false
+preg_match("/^cow/", "cowabunga!"); // returns true
+preg_match("/cow$/", "Dave was a cowhand"); // returns false
+preg_match("/cow$/", "Don't have a cow"); // returns true
+
+preg_match("/c.t/", "cat"); // returns true
+preg_match("/c.t/", "cut"); // returns true
+preg_match("/c.t/", "c t"); // returns true
+preg_match("/c.t/", "bat"); // returns false
+preg_match("/c.t/", "ct"); // returns false
+
+preg_match("/\$5.00/", "Your bill is $5.00 exactly"); // returns true
+preg_match("/$5.00/", "Your bill is $5.00 exactly"); // returns false
+
+preg_match("/cat|dog/", "the cat rubbed my legs"); // returns true
+preg_match("/cat|dog/", "the dog rubbed my legs"); // returns true
+preg_match("/cat|dog/", "the rabbit rubbed my legs"); // returns false
+preg_match("/^([a-z]|[0-9])/", "The quick brown fox"); // returns false
+preg_match("/^([a-z]|[0-9])/", "jumped over"); // returns true
+preg_match("/^([a-z]|[0-9])/", "10 lazy dogs"); // returns true
+
+preg_match("/[0-9]{3}-[0-9]{3}-[0-9]{4}/", "303-555-1212"); // returns true
+preg_match("/[0-9]{3}-[0-9]{3}-[0-9]{4}/", "64-9-555-1234"); // returns,false
+
+preg_match("{/usr/local/}", "/usr/local/bin/perl"); // returns true
+
+//$textfiles = preg_grep('/\.txt$/', $filenames);
+
 $v=1;

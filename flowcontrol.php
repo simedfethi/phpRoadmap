@@ -1,4 +1,5 @@
 <?php
+declare(encoding ='UTF-8');
 $user_validated=true;
 $active =true;
 if ($user_validated)
@@ -45,7 +46,9 @@ switch ($active):
         break;
 endswitch;
 $active=false;
-print "\r\n";
+function ln(){
+    print "\r\n";
+}
 switch ($active) {
     case true:
         echo 'switch true';
@@ -81,3 +84,67 @@ while ($i <= 10) {
     $total += $i;
     $i++;
 }
+
+ln();
+
+$i = 0;
+$j = 0;
+while ($i < 10) {
+    while ($j < 10) {
+        if ($j == 5) {
+            break 2; // breaks out of two while loops
+        }
+        $j++;
+    }
+    $i++;
+}
+echo "{$i}, {$j}";
+ln();
+
+
+while ($i < 10) {
+    $i++;
+    while ($j < 10) {
+        if ($j == 5) {
+            continue 2; // continues through two levels
+        }
+        $j++;
+    }
+}
+
+$total = 0;
+$i = 1;
+do {
+    $total += $i++;
+} while ($i <= 10);
+ln();
+
+for ($counter = 0; $counter < 10; $counter++) {
+    echo "Counter is $counter ";
+    ln();
+}
+$total = 0;
+for ($i = 1; $i <= 10; $i++):
+    $total += $i;
+endfor;
+
+$total = 0;
+for ($i = 0, $j = 1; $i <= 10; $i++, $j *= 2) {
+    $total += $j;
+}
+for (;;) {
+    echo "Can't stop me!";
+    ln();
+    break;
+}
+
+try {
+
+} catch (
+PDOException $error) {
+    print "Error!: " . $error->getMessage() ;
+    die();
+}
+
+
+

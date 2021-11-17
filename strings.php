@@ -66,3 +66,46 @@ printf('You\'ve spent $%5.2f so far', 4.1);
 
 $a = array('name' => 'Fred', 'age' => 35, 'wife' => 'Wilma');
 print_r($a);
+
+var_dump(true);
+var_dump(false);
+var_dump(null);
+var_dump(array('name' => "Fred", 'age' => 35));
+class P {
+    var $name = 'Nat';
+// ...
+}
+$p = new P;
+var_dump($p);
+
+$string = 'Hello, world';
+$length = strlen($string); // $length is 12
+
+for ($i=0;$i< strlen($string);$i++)
+{
+    printf("the %d element is %s \r\n",$i,$string[$i]);
+}
+
+$title = " Programming PHP \n";
+$str1 = ltrim($title); // $str1 is "Programming PHP \n"
+$str2 = rtrim($title); // $str2 is " Programming PHP"
+$str3 = trim($title); // $str3 is "Programming PHP"
+
+
+$string1 = "FRED flintstone";
+$string2 = "barney rubble";
+print(strtolower($string1));
+print(strtoupper($string1));
+print(ucfirst($string2));
+print(ucwords($string2));
+
+$table = get_html_translation_table(HTML_ENTITIES);
+$input = '<p>Howdy, &quot;Cowboy&quot;</p>';
+$output = strip_tags($input);
+
+$input = 'The <b>bold</b> tags will <i>stay</i><p>';
+$output = strip_tags($input, '<b>');
+$metaTags = get_meta_tags('https://www.youtube.com/');
+echo "Web page made by {$metaTags['author']}";
+
+$v=1;

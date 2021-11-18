@@ -98,6 +98,167 @@ for ($i=0; $i < 4; $i++) {
 $shape = "round";
 $array = array('cover' => "bird", 'shape' => "rectangular");
 extract($array, EXTR_PREFIX_ALL, "book");
-echo "Cover: {$book_cover}, Book Shape: {$book_shape}, Shape: {$shape}";
+echo "Cover: {$book_cover}, Book Shape: {$book_shape}, Shape: {$shape} \n";
 
+$addresses = array("spam@cyberpromo.net", "abuse@example.com");
+foreach ($addresses as $adress)
+{
+   echo "processing:{$adress} \n";
+}
+
+$person = array('name' => "Fred", 'age' => 35, 'wife' => "Wilma");
+
+foreach ($person as $key => $value)
+{
+    echo " $key :  $value  \n";
+}
+
+
+$addresses = array("spam@cyberpromo.net", "abuse@example.com");
+$addressCount = count($addresses);
+for ($i = 0; $i < $addressCount; $i++) {
+    $value = $addresses[$i];
+    echo "{$value}\n";
+}
+
+$printRow = function ($value, $key)
+{
+    print("<tr><td>{$key}</td><td>{$value}</td></tr>\n");
+};
+$person = array('name' => "Fred", 'age' => 35, 'wife' => "Wilma");
+echo "<table border=1>";
+array_walk($person, $printRow);
+echo "</table>";
+
+
+$addItUp = function ($runningTotal, $currentValue)
+{
+    $runningTotal += $currentValue * $currentValue;
+    return $runningTotal;
+};
+$numbers = array(2, 3, 5, 7);
+$total = array_reduce($numbers, $addItUp);
+echo $total;
+
+$addresses = array("spam@cyberpromo.net", "abuse@example.com",
+    "root@example.com");
+$gotSpam = array_search("spam@cyberpromo.net", $addresses); // $gotSpam istrue
+$gotMilk = in_array("milk@tucows.com", $addresses); // $gotMilk is false
+
+
+$names = array("Cath", "Angela", "Brad", "Mira");
+ksort($names); // $names is now "Angela", "Brad", "Cath", "Mira"
+
+
+function userSort($a, $b)
+{
+// smarts is all-important, so sort it first
+    if ($b == "smarts") {
+        return 1;
+    }
+    else if ($a == "smarts") {
+        return −1;
+    }
+    return ($a == $b) ? 0 : (($a < $b) ? −1 : 1);
+}
+
+$u2h = array(
+    'gnat' => "/home/staff/nathan",
+    'frank' => "/home/action/frank",
+    'petermac' => "/home/staff/petermac",
+    'ktatroe' => "/home/staff/kevin"
+);
+$h2u = array_flip($u2h);
+$user = $h2u["/home/staff/kevin"]; // $user is now 'ktatroe'
+
+$weekdays = array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday");
+shuffle($weekdays);
+print_r($weekdays);
+
+$scores = array(98, 76, 56, 80);
+$total = array_sum($scores); // $total = 310
+
+
+$first = array("1","hello", "world"); // 0 => "hello", 1 => "world"
+$second = array("1","exit", "here"); // 0 => "exit", 1 => "here"
+$merged = array_merge($first, $second);
+// $merged = array("hello", "world", "exit", "here")
+
+
+
+$a1 = array("bill", "claire", "ella", "simon", "judy");
+$a2 = array("jack", "claire", "toni");
+$a3 = array("ella", "simon", "garfunkel");
+// find values of $a1 not in $a2 or $a3
+$difference = array_diff($a1, $a2, $a3);
+print_r($difference);
+
+function isOdd ($element) {
+    return $element % 2;
+}
+$numbers = array(9, 23, 24, 27);
+$odds = array_filter($numbers, "isOdd");
+
+function arrayUnion($a, $b)
+{
+    $union = array_merge($a, $b); // duplicates may still exist
+    $union = array_unique($union);
+    return $union;
+}
+$first = array(1, "two", 3);
+$second = array("two", "three", "four");
+$union = arrayUnion($first, $second);
+print_r($union);
+print'2';
+echo '1'. 1+3;
+
+$x = "abc";
+$$x = 200;
+echo $x."<br/>";
+echo $$x."<br/>";
+echo strlen('1\n2')*strlen("1\n2");
+
+
+class BasicArray implements Iterator
+{
+    private $position = 0;
+    private $array = ["first", "second", "third"];
+
+    public function __construct()
+    {
+        $this->position = 0;
+    }
+
+    public function rewind()
+    {
+        $this->position = 0;
+    }
+
+    public function current()
+    {
+        return $this->array[$this->position];
+    }
+
+    public function key()
+    {
+        return $this->position;
+    }
+
+    public function next()
+    {
+        $this->position += 1;
+    }
+
+    public function valid()
+    {
+        return isset($this->array[$this->position]);
+    }
+}
+$basicArray = new BasicArray();
+foreach ($basicArray as $value) {
+    echo "{$value}\n";
+}
+foreach ($basicArray as $key => $value) {
+    echo "{$key} => {$value}\n";
+}
 $v=1;

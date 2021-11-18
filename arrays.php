@@ -47,4 +47,32 @@ $reversedNumbers = range(5, 2); // $reversedNumbers = array(5, 4, 3, 2);
 $family = array("Fred", "Wilma", "Pebbles");
 $size = count($family); // $size is 3
 $size2= sizeof($family);
+
+$r= array(1,2);
+$r=array_pad($r,10000,0);
+
+$row0 = array(1, 2, 3);
+$row1 = array(4, 5, 6);
+$row2 = array(7, 8, 9);
+$multi = array($row0, $row1, $row2);
+$value = $multi[2][0]; // row 2, column 0. $value = 7
+ echo "{$multi[2][0]} ";
+
+$person = array("Fred", 35, "Betty");
+list($name, $age, $wife) = $person;
+
+$values = range('a', 'e'); // use range to populate the array
+list($m, , $n, , $o) = $values; // $m is "a", $n is "c", $o is "e"
+
+$people = array("Tom", "Dick", "Harriet", "Brenda", "Jo");
+$middle = array_slice($people, 2, 4); // $middle is array("Harriet","Brenda")
+
+
+$nums = range(1, 7);
+$rows = array_chunk($nums, 3);
+print_r($rows);
+
+$person = array('name' => "Fred", 'age' => 35, 'wife' => "Wilma");
+$keys = array_keys($person); // $keys is array("name", "age", "wife")
+
 $v=1;

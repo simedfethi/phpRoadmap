@@ -75,4 +75,29 @@ print_r($rows);
 $person = array('name' => "Fred", 'age' => 35, 'wife' => "Wilma");
 $keys = array_keys($person); // $keys is array("name", "age", "wife")
 
+
+$person1['age'] = 0; // unborn?
+if ($person1['age']) {
+    echo "true!\n";
+}
+if (array_key_exists('age', $person1)) {
+    echo "exists!\n";
+}
+
+
+$a = array(0, NULL, '');
+function tf($v)
+{
+    return $v ? 'T' : 'F';
+}
+for ($i=0; $i < 4; $i++) {
+    printf("%d: %s %s\n", $i, tf(isset($a[$i])), tf(array_key_exists($i,
+        $a)));
+}
+
+$shape = "round";
+$array = array('cover' => "bird", 'shape' => "rectangular");
+extract($array, EXTR_PREFIX_ALL, "book");
+echo "Cover: {$book_cover}, Book Shape: {$book_shape}, Shape: {$shape}";
+
 $v=1;

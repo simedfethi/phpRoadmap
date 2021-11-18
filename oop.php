@@ -94,6 +94,7 @@ class Person6 {
      //private INTERNAL_KEY = "ABC1234";
    static function sety(){
       self::$y= self::$x;
+      static::$y=self::$x;
    }
  }
  Person8::sety();
@@ -188,4 +189,125 @@ class Person9 {
 $person = new Person9;
 $person->run();
 $person->runCommand();
+
+
+abstract class Component {
+    abstract function printOutput();
+}
+class ImageComponent1 extends Component {
+    function printOutput() {
+        echo "Pretty picture";
+    }
+}
+
+
+class A { // Base Class
+    protected static $name = 'ClassA';
+    public static function getSelfName() {
+        return self::$name;
+    }
+    public static function getStaticName() {
+        return static::$name;
+    }
+}
+
+class B extends A {
+    protected static $name = 'ClassB';
+}
+
+
+echo B::getSelfName(); // ClassA
+echo B::getStaticName(); // ClassB
+
+echo A::getSelfName(); // ClassA
+echo A::getStaticName(); // ClassA
+
+
+
+
+class Person10 {
+    public $name, $address, $age;
+    function __construct($name, $address, $age) {
+        $this->name = $name;
+        $this->address = $address;
+        $this->age = $age;
+    }
+    function __destruct() {
+        echo "A Building is being destroyed!";
+    }
+}
+class Employee extends Person10 {
+    public $position, $salary;
+    function __construct($name, $address, $age, $position, $salary) {
+        parent::__construct($name, $address, $age);
+        $this->position = $position;
+        $this->salary = $salary;
+       // $this->__destruct();
+    }
+
+}
+
+
+
+// return an anonymous implementation of Person
+$anonymous = new class() extends Person {
+    public function getName() {
+// return static value for testing purposes
+        return "Moana";
+    }
+}; // note: requires closing semicolon, unlike nonanonymous class definitions
+
+
+
+
+
+function displayClasses() {
+    $classes = get_declared_classes();
+    foreach ($classes as $class) {
+        echo "Showing information about {$class}<br />";
+        $reflection = new ReflectionClass($class);
+        $isAnonymous = $reflection->isAnonymous() ? "yes" : "no";
+        echo "Is Anonymous: {$isAnonymous}<br />";
+        echo "Class methods:<br />";
+        $methods = $reflection->getMethods(ReflectionMethod::IS_STATIC);
+        if (!count($methods)) {
+            echo "<i>None</i><br />";
+        }
+        else {
+            foreach ($methods as $method) {
+                echo "<b>{$method}</b>()<br />";
+            }
+        }
+        echo "Class properties:<br />";
+        $properties = $reflection->getProperties();
+        if (!count($properties)) {
+            echo "<i>None</i><br />";
+        }
+        else {
+            foreach(array_keys($properties) as $property) {
+                echo "<b>\${$property}</b><br />";
+            }
+        }
+        echo "<hr />";
+    }
+}
+
+displayClasses();
+
+
+
+class Person11 {
+    public $name;
+    public $age;
+}
+$fred = new Person11;
+$fred->name = "Fred";
+$props = get_object_vars($fred); // array('name' => "Fred", 'age' =>NULL);
+
+class A1 {}
+class B1 extends A1 {}
+$obj = new B_1;
+echo get_parent_class($obj);
+
+
 $i=1;

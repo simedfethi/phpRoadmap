@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3246fa7a-b1e2-4b83-b0ad-88d418b41fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flevel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sessions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongodb.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flevel.php" beforeDir="false" afterPath="$PROJECT_DIR$/flevel.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +66,7 @@
     <property name="TYPO3XliffLanguages" value="af:Afrikaans;&#10;ar:Arabic;&#10;bs:Bosnian;&#10;bg:Bulgarian;&#10;ca:Catalan;&#10;ch:Chinese (Simpl.);&#10;cs:Czech;&#10;da:Danish;&#10;de:German;&#10;el:Greek;&#10;eo:Esperanto;&#10;es:Spanish;&#10;et:Estonian;&#10;eu:Basque;&#10;fa:Persian;&#10;fi:Finnish;&#10;fo:Faroese;&#10;fr:French;&#10;fr_CA:French (Canada);&#10;gl:Galician;&#10;he:Hebrew;&#10;hi:Hindi;&#10;hr:Croatian;&#10;hu:Hungarian;&#10;is:Icelandic;&#10;it:Italian;&#10;ja:Japanese;&#10;ka:Georgian;&#10;kl:Greenlandic;&#10;km:Khmer;&#10;ko:Korean;&#10;lt:Lithuanian;&#10;lv:Latvian;&#10;ms:Malay;&#10;nl:Dutch;&#10;no:Norwegian;&#10;pl:Polish;&#10;pt:Portuguese;&#10;pt_BR:Brazilian Portuguese;&#10;ro:Romanian;&#10;ru:Russian;&#10;sk:Slovak;&#10;sl:Slovenian;&#10;sq:Albanian;&#10;sr:Serbian;&#10;sv:Swedish;&#10;th:Thai;&#10;tr:Turkish;&#10;uk:Ukrainian;&#10;vi:Vietnamese;&#10;zh:Chinese (Trad.)" />
     <property name="TYPO3XliffPathToExtensionLanguageFiles" value="Resources/Private/Language/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -121,7 +123,7 @@
       <workItem from="1637102170050" duration="4931000" />
       <workItem from="1637145484676" duration="16686000" />
       <workItem from="1637177984620" duration="33013000" />
-      <workItem from="1637352421667" duration="8793000" />
+      <workItem from="1637352421667" duration="11428000" />
     </task>
     <task id="LOCAL-00001" summary="statics">
       <created>1637147844445</created>
@@ -263,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637488294627</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="files">
+      <created>1637490237615</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1637490237615</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,14 +313,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1637270467201" />
-    <state x="397" y="0" key="CommitChangelistDialog2" timestamp="1637488293359">
+    <state x="397" y="0" key="CommitChangelistDialog2" timestamp="1637490236369">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="397" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1637488293359" />
-    <state width="470" height="466" key="DebuggerActiveHint" timestamp="1637446713931">
+    <state x="397" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1637490236369" />
+    <state width="470" height="466" key="DebuggerActiveHint" timestamp="1637490338748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="470" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1637446713931" />
+    <state width="470" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1637490338748" />
     <state x="651" y="310" key="Github.ShareDialog" timestamp="1637147018617">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -320,38 +329,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="638" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1637147024730" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1637488949476">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1637488949476">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1637492102930">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1637488949476">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1637492102930" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1637492102930">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1637488949476">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1637492102930" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1637488949259">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1637488949259">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1637488949259">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1637488949259">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1637492102931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1637492102931" />
     <state width="1478" height="258" key="GridCell.Tab.2.bottom" timestamp="1637159483358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -372,10 +381,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1637151350484" />
-    <state x="608" y="335" key="NewPhpFileDialog" timestamp="1637489577902">
+    <state x="608" y="335" key="NewPhpFileDialog" timestamp="1637492024498">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="608" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1637489577902" />
+    <state x="608" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1637492024498" />
     <state x="281" y="57" key="SettingsEditor" timestamp="1637488708601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

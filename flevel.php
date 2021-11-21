@@ -52,3 +52,8 @@ if (!empty($_POST['posted'])) {
     </tr>
 </table>
 <?php } ?>
+
+<?
+$handle=fopen('database.php',"r");
+
+

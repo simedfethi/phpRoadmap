@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3246fa7a-b1e2-4b83-b0ad-88d418b41fc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/selectarray.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tick.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flevel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sessions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temperature.php" beforeDir="false" afterPath="$PROJECT_DIR$/temperature.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +34,11 @@
     <auto-save>true</auto-save>
   </component>
   <component name="PhpDebugGeneral" xdebug_debug_port="9003" listening_started="true" />
+  <component name="PhpServers">
+    <servers>
+      <server host="php.localhost" id="53abc83d-7fbc-4391-b28e-f04af2e1c655" name="php.localhost" />
+    </servers>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0" />
   <component name="ProjectId" id="211IScLi1yRrOpzUgEGTWYd69TH" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -64,20 +66,20 @@
     <property name="TYPO3XliffPathToExtensionLanguageFiles" value="Resources/Private/Language/" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalResources" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.files.php">
+  <component name="RunManager" selected="PHP Web Page.webpage">
+    <configuration name="Unnamed" type="JavascriptDebugType" nameIsGenerated="true" uri="http://php.localhost/sessions.php">
+      <method v="2" />
+    </configuration>
     <configuration name="files.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://symfonycrud.localhost/files.php">
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" nameIsGenerated="true" document_root="$PROJECT_DIR$">
+    <configuration name="sessions.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://php.localhost/sessions.php">
       <method v="2" />
     </configuration>
     <configuration name="database.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/database.php">
-      <method v="2" />
-    </configuration>
-    <configuration name="oop.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/oop.php">
       <method v="2" />
     </configuration>
     <configuration name="tick.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/tick.php">
@@ -86,21 +88,25 @@
     <configuration name="web.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/web.php">
       <method v="2" />
     </configuration>
+    <configuration name="webpage" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="php.localhost" start_url="/flevel.php">
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="PHP Built-in Web Server.Unnamed" />
-      <item itemvalue="PHP Script.oop.php" />
+      <item itemvalue="JavaScript Debug.files.php" />
+      <item itemvalue="JavaScript Debug.sessions.php" />
+      <item itemvalue="JavaScript Debug.Unnamed" />
       <item itemvalue="PHP Script.web.php" />
       <item itemvalue="PHP Script.database.php" />
       <item itemvalue="PHP Script.tick.php" />
-      <item itemvalue="JavaScript Debug.files.php" />
+      <item itemvalue="PHP Web Page.webpage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.sessions.php" />
         <item itemvalue="JavaScript Debug.files.php" />
         <item itemvalue="PHP Script.tick.php" />
         <item itemvalue="PHP Script.database.php" />
         <item itemvalue="PHP Script.web.php" />
-        <item itemvalue="PHP Script.oop.php" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +121,7 @@
       <workItem from="1637102170050" duration="4931000" />
       <workItem from="1637145484676" duration="16686000" />
       <workItem from="1637177984620" duration="33013000" />
-      <workItem from="1637352421667" duration="7016000" />
+      <workItem from="1637352421667" duration="8793000" />
     </task>
     <task id="LOCAL-00001" summary="statics">
       <created>1637147844445</created>
@@ -250,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637357669352</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="files">
+      <created>1637488294627</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1637488294627</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,21 +280,34 @@
     <MESSAGE value="arrays" />
     <MESSAGE value="oop" />
     <MESSAGE value="http" />
-    <option name="LAST_COMMIT_MESSAGE" value="http" />
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="227" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637159479520">
+    <state x="352" y="67" key="#CLI_Interpreters" timestamp="1637488705387">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="227" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1637159479520" />
+    <state x="352" y="67" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1637488705387" />
+    <state x="352" y="98" key="#Servers" timestamp="1637490024007">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="352" y="98" key="#Servers/0.0.1536.824@0.0.1536.824" timestamp="1637490024007" />
+    <state x="574" y="232" key="#Web_Browsers" timestamp="1637490017743">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="232" key="#Web_Browsers/0.0.1536.824@0.0.1536.824" timestamp="1637490017743" />
+    <state x="227" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1637490028852">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="227" y="38" width="1089" height="786" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1637490028852" />
     <state x="578" y="94" key="#com.intellij.ide.util.MemberChooser" timestamp="1637270467201">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="578" y="94" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1637270467201" />
-    <state x="397" y="0" key="CommitChangelistDialog2" timestamp="1637357668080">
+    <state x="397" y="0" key="CommitChangelistDialog2" timestamp="1637488293359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="397" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1637357668080" />
+    <state x="397" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1637488293359" />
     <state width="470" height="466" key="DebuggerActiveHint" timestamp="1637446713931">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -294,38 +320,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="638" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1637147024730" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1637488162594">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom" timestamp="1637488949476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488162594" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1637488162594">
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center" timestamp="1637488949476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1637488162594" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1637488162594">
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left" timestamp="1637488949476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1637488162594" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1637488162594">
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right" timestamp="1637488949476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1637488162594" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1637488162406">
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1637488949476" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1637488949259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488162406" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1637488162406">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1637488949259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1637488162406" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1637488162406">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1637488949259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1637488162406" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1637488162406">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1637488949259">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1637488162406" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1637488949259" />
     <state width="1478" height="258" key="GridCell.Tab.2.bottom" timestamp="1637159483358">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,18 +372,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1637151350484" />
-    <state x="608" y="335" key="NewPhpFileDialog" timestamp="1637487998265">
+    <state x="608" y="335" key="NewPhpFileDialog" timestamp="1637489577902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="608" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1637487998265" />
-    <state x="281" y="57" key="SettingsEditor" timestamp="1637270096577">
+    <state x="608" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1637489577902" />
+    <state x="281" y="57" key="SettingsEditor" timestamp="1637488708601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="281" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1637270096577" />
-    <state x="365" y="145" key="Vcs.Push.Dialog.v2" timestamp="1637357671576">
+    <state x="281" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1637488708601" />
+    <state x="365" y="145" key="Vcs.Push.Dialog.v2" timestamp="1637488296289">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="365" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1637357671576" />
+    <state x="365" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1637488296289" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

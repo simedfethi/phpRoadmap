@@ -1,10 +1,13 @@
+<?php
+$fahrenheit=0;
+?>
 <html>
 <head><title>Temperature Conversion</title></head>
 <body>
 <?php if ($_SERVER['REQUEST_METHOD'] == 'GET') { ?>
     <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="POST">
         Fahrenheit temperature:
-        <input type="text" name="fahrenheit" /><br />
+        <input type="text" name="fahrenheit" value="<?php echo $fahrenheit; ?>" /><br />
         <input type="submit" value="Convert to Celsius!" />
     </form>
 <?php }
